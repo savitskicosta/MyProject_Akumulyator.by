@@ -2,7 +2,9 @@ html {
 	box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
 	box-sizing: inherit;
 }
 
@@ -11,26 +13,37 @@ a {
 	color: inherit;
 }
 
-ul, li {
+ul,
+li {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	margin: 0;
 }
 
 body {
-	color: #2F3035;
-	font-family: sans-serif;
+	color: #2f3035;
+	font-family: 'SFProDisplay-Regular', sans-serif;
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 400;
 }
 
-.container	{
+.container {
 	max-width: 1200px;
 	padding: 0 15px;
 	margin: 0 auto;
 }
+
+/* header__top */
 
 .header__top-inner {
 	display: flex;
@@ -43,6 +56,92 @@ body {
 	width: 100px;
 }
 
+.header__callme {
+	display: flex;
+	align-items: center;
+}
+
 .header__callme-image {
-	width: 50px;
+	display: block;
+	width: 60px;
+	margin-right: 10px;
+}
+
+.header__callme-text {
+	font-size: 28px;
+	line-height: 32px;
+	text-align: center;
+	margin-right: 50px;
+	color: #fab42a;
+}
+
+.header__callme-phone {
+	display: flex;
+	flex-direction: column;
+}
+
+.header__phone-number {
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 800;
+}
+
+.header__features {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.header__features-title {
+	line-height: 48px;
+	font-size: 42px;
+	color: #fab42a;
+}
+
+.header__features-subtitle {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.basket {
+	position: relative;
+}
+
+.basket__num {
+	font-family: 'SFProDisplay-Medium', sans-serif;
+	position: absolute;
+	color: #fff;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 30px;
+	width: 30px;
+	height: 30px;
+	background-color: #fab42a;
+	border-radius: 50%;
+	text-align: center;
+	bottom: -15px;
+	right: -15px;
+}
+
+.header__basket-img {
+	width: 60px;
+}
+
+/* header__bottom */
+
+.header__bottom {
+	background-color: #3D3D41;
+}
+
+.menu-categories {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 54px;
+}
+
+.menu-categories__link {
+	color: #fff;
+	font-family: 'SFProDisplay-Regular', sans-serif;
+	font-weight: 400;
 }
