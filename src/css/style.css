@@ -43,6 +43,10 @@ body {
 	margin: 0 auto;
 }
 
+.header {
+	margin-bottom: 78px;
+}
+
 /* header__top */
 
 .header__top-inner {
@@ -64,15 +68,20 @@ body {
 .header__callme-image {
 	display: block;
 	width: 60px;
-	margin-right: 10px;
+	/* margin-right: 3px; */
 }
 
 .header__callme-text {
 	font-size: 28px;
 	line-height: 32px;
 	text-align: center;
-	margin-right: 50px;
+	margin-right: 70px;
 	color: #fab42a;
+	transition: transform 0.3s ease;
+}
+
+.header__callme-text:hover {
+	transform: scale(1.05);
 }
 
 .header__callme-phone {
@@ -84,6 +93,12 @@ body {
 	font-size: 24px;
 	line-height: 32px;
 	font-weight: 800;
+	transition: transform 0.3s ease;
+}
+
+.header__phone-number:hover {
+	transform: scale(1.05);
+	color: #fab42a;
 }
 
 .header__features {
@@ -105,6 +120,11 @@ body {
 
 .basket {
 	position: relative;
+	transition: transform 0.3s ease;
+}
+
+.basket:hover {
+	transform: scale(1.25);
 }
 
 .basket__num {
@@ -144,4 +164,30 @@ body {
 	color: #fff;
 	font-family: 'SFProDisplay-Regular', sans-serif;
 	font-weight: 400;
+	transition: all, .3s;
+	padding: 14px 0 15px;
+	position: relative;
+}
+
+.menu-categories__link::before {
+	content: '';
+	position: absolute;
+	width: 0;
+	left: auto;
+	background-color: #fab42a;
+	height: 3px;
+	bottom: -2px;
+	transition: all, .5s;
+	right: 0;
+}
+
+.menu-categories__link:hover {
+	font-family: 'SFProDisplay-Semibold', sans-serif;
+	color: #fab42a;
+}
+
+.menu-categories__link:hover::before {
+	width: 100%;
+	right: auto;
+	left: 0;
 }
