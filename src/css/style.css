@@ -237,10 +237,16 @@ body {
 }
 
 .product-card__image {
-	width: 200px;
-	height: 200px;
+	height: 190px;
 	border-bottom: 1px solid #ddd;
-	overflow: hidden;
+	display: flex;
+	align-items: center;
+}
+
+.product-card__image img {
+	width: 100%;
+	min-height: auto;
+	object-fit: cover;
 }
 
 .product-card__title {
@@ -375,7 +381,7 @@ body {
 	padding-bottom: 75px;
 }
 
-.features-title {
+/* .features-title {
 	font-family: 'SFProDisplay-Bold', sans-serif;
 	font-weight: 700;
 	font-size: 52px;
@@ -387,13 +393,12 @@ body {
 	font-size: 16px;
 	color: #666666;
 	max-width: 500px;
-}
+} */
 
 .features-block {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin-top: 35px;
 }
 
 .features-item {
