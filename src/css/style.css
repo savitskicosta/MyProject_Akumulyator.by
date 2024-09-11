@@ -62,23 +62,33 @@ body {
 	align-items: center;
 }
 
-.header__callme-image {
-	display: block;
-	width: 60px;
-	margin-right: 3px;
-}
-
-.header__callme-text {
-	font-size: 28px;
-	line-height: 32px;
-	text-align: center;
-	margin-right: 70px;
-	color: #fab42a;
+.header__callme-btn {
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 16px;
+	letter-spacing: 0.12em;
+	font-family: 'SFProDisplay-Bold', sans-serif;
+	border-radius: 3px;
+	padding: 18px 30px;
+	background-color: #fab42a;
+	color: rgb(0, 0, 0);
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-right: 30px;
 	transition: transform 0.3s ease;
+	animation-duration: 0.5s;
 }
 
-.header__callme-text:hover {
+.header__callme-btn img {
+	margin-right: 5px;
+}
+
+.header__callme-btn:hover {
 	transform: scale(1.05);
+	color: #fff;
 }
 
 .header__callme-phone {
@@ -87,10 +97,16 @@ body {
 }
 
 .header__phone-number {
+	display: flex;
 	font-size: 24px;
 	line-height: 32px;
 	font-weight: 800;
 	transition: transform 0.3s ease;
+}
+
+.header__phone-number img {
+	width: 30px;
+	margin-right: 5px;
 }
 
 .header__phone-number:hover {
